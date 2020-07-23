@@ -1,8 +1,8 @@
 function sumAll(arr) {
+  const max = arr.reduce((a, b) => (a > b ? a : b))
+  const min = arr.reduce((a, b) => (a < b ? a : b))
   let sum = 0
-  const max = Math.max(arr[0], arr[1])
-  const min = Math.min(arr[0], arr[1])
-  for (let i = min; i <= max; i++) {
+  for (i = min; i <= max; i++) {
     sum += i
   }
   return sum
