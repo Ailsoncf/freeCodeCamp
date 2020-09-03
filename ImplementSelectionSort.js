@@ -1,8 +1,8 @@
 function selectionSort(array) {
   const arr = [...array]
-  for (let i = 0; i < arr.length - 1; i += 1) {
+  for (let i = 0; i < arr.length - 1; i++) {
     let minIndex = i
-    for (let j = i + 1; j < arr.length; j += 1) {
+    for (let j = i + 1; j < arr.length; j++) {
       if (arr[j] < arr[minIndex]) {
         minIndex = j
       }
